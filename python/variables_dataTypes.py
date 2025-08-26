@@ -13,14 +13,46 @@ gpa = 3.2
 # Boolean
 is_hacker = True
 
-# Lists & Disctionaries
-skills = ["Python", "Networking", "Blockchain"]
-profile = {"name": name, "age": age, "skills": skills}
+# collection = single "variable" used to store multiple values
+# List = [] ordered and changeable, duplicates ok
+# Set = {} unordered and immutable, but Add/Remove OK. NO dupicates
+# Tuple = () ordered and unchangeable. Duplicates OK. FASTER
 
-print(f"Hello {name}")
-print(profile)
+# List
+print("List")
+fruits = ["apples", "orange", "banana", "coconut"]
+for fruit in fruits:
+    print(fruit)
 
-if is_hacker:
-    print(f"Hacker: {is_hacker}")
-else:
-    print("Not a hacker")
+fruits[0] = "pineapple"
+fruits.append("mango")
+fruits.remove("orange")
+fruits.insert(0, "grapes")
+print("apples" in fruits)
+fruits.sort()
+fruits.reverse()
+
+for fruit in fruits:
+    print(fruit)
+
+print(fruits.index("grapes"))
+print(fruits.count("grapes"))
+
+fruits.clear()
+
+# Set
+print("Set")
+fruits = {"apples", "orange", "banana", "coconut"}
+print("apples" in fruits)
+fruits.add("pineapple")
+fruits.remove("apples")
+fruits.pop()
+fruits.add("pineapple")
+print(fruits)
+
+#Tuple
+print("Tuple")
+fruits = ("apples", "orange", "banana", "coconut", "coconut")
+print(len(fruits))
+print("pineapple" in fruits)
+print(fruits.count("coconut"))
