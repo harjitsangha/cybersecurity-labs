@@ -56,3 +56,19 @@ fruits = ("apples", "orange", "banana", "coconut", "coconut")
 print(len(fruits))
 print("pineapple" in fruits)
 print(fruits.count("coconut"))
+
+# 2D lists
+print("2D List")
+
+fruits =     ["apple", "banana", "coconut"]
+vegetables = ["celery", "carrots", "potatoes"]
+meats =      ["chicken", "fish", "turkey"]
+
+groceries = [fruits, vegetables, meats]
+
+for grocery in groceries:
+    for item in grocery:
+        print(item, end =" ")
+    print()
+
+
